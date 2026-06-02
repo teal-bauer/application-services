@@ -9,7 +9,7 @@ exclude = ["/android", "/ios"]
 [dependencies]
 log = "0.4"
 thiserror = "2"
-uniffi = { version = "0.31" }
+uniffi = { git = "https://github.com/mozilla/uniffi-rs", rev = "c0d94427803d40bbd7800df57f5f524ff4d16c3b" }
 
 [build-dependencies]
-uniffi = { version = "0.31", features=["build"]}
+uniffi = { git = "https://github.com/mozilla/uniffi-rs", rev = "c0d94427803d40bbd7800df57f5f524ff4d16c3b", features=["build"]}

@@ -45,22 +45,22 @@ impl CuratedRecommendationLocale {
     ///
     /// These strings are the canonical serialized values of the enum variants.
     pub fn all_locales() -> Vec<String> {
-        <[_]>::into_vec(alloc::boxed::box_new([
-            ("fr".to_string()),
-            ("fr-FR".to_string()),
-            ("es".to_string()),
-            ("es-ES".to_string()),
-            ("it".to_string()),
-            ("it-IT".to_string()),
-            ("en".to_string()),
-            ("en-CA".to_string()),
-            ("en-GB".to_string()),
-            ("en-US".to_string()),
-            ("de".to_string()),
-            ("de-DE".to_string()),
-            ("de-AT".to_string()),
-            ("de-CH".to_string()),
-        ]))
+        vec![
+            "fr".to_string(),
+            "fr-FR".to_string(),
+            "es".to_string(),
+            "es-ES".to_string(),
+            "it".to_string(),
+            "it-IT".to_string(),
+            "en".to_string(),
+            "en-CA".to_string(),
+            "en-GB".to_string(),
+            "en-US".to_string(),
+            "de".to_string(),
+            "de-DE".to_string(),
+            "de-AT".to_string(),
+            "de-CH".to_string(),
+        ]
     }
 
     /// Parses a locale string (e.g. `"en-US"`) into a `CuratedRecommendationLocale`
